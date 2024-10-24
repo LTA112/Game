@@ -1,0 +1,173 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 7/07/2024, 8:05:17 PM
+    Author     : admin
+*/
+
+/* style_Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: url('../images/Gif.gif') no-repeat center center fixed; /* Đặt nền với ảnh cố định */
+    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ màn hình */
+    color: #333; /* Màu chữ */
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive; /* Font chữ Pixel */
+}
+
+.h1 {
+    line-height: 1.5; /* Khoảng cách giữa các dòng chữ */
+    text-align: center; /* Canh giữa văn bản */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Nền mờ */
+    border-radius: 15px; /* Góc bo tròn */
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    max-width: 500px;
+    margin: 5rem auto; /* Canh giữa và tạo khoảng cách */
+    text-align: center;
+}
+
+.alert-danger {
+    color: red; /* Màu chữ cảnh báo */
+}
+
+a {
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+}
+
+.custom-btn {
+    font-size: 1.2rem; /* Kích thước chữ */
+    padding: 0.8rem 1.6rem; /* Đệm */
+    border-radius: 10px; /* Góc bo tròn */
+    text-transform: uppercase; /* Chữ hoa */
+    font-weight: bold; /* Đậm chữ */
+    display: inline-block;
+    margin: 0.5rem;
+    transition: background 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+.btn-play {
+    background: #FFCC00; /* Nền nút */
+    color: #333; /* Màu chữ */
+    border: none;
+}
+
+.btn-play:hover {
+    background: #FFD700; /* Màu nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+}
+
+.btn-login {
+    background: #32CD32; /* Nền nút đăng nhập */
+    color: #fff;
+    border: none;
+}
+
+.btn-login:hover {
+    background: #228B22; /* Màu nền khi hover */
+}
+
+.btn-register {
+    background: #1E90FF; /* Nền nút đăng ký */
+    color: #fff;
+    border: none;
+}
+
+.btn-register:hover {
+    background: #4682B4; /* Màu nền khi hover */
+}
+
+.btn-rank {
+    background: #000; /* Nền nút */
+    border: none;
+    padding: 0;
+    width: 100px; /* Chiều rộng */
+    height: 56px; /* Chiều cao */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-rank img {
+    width: 30px; /* Kích thước ảnh */
+    height: 30px; /* Kích thước ảnh */
+}
+
+.btn-rank:hover {
+    background: #333; /* Màu nền khi hover */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* Nền mờ */
+    padding: 1.5rem;
+    border-radius: 10px; /* Góc bo tròn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    margin: 1rem auto;
+    max-width: 400px;
+}
+
+.form-control {
+    border-radius: 5px; /* Góc bo tròn */
+    border: 1px solid #ddd; /* Viền */
+}
+
+.custom-spacing {
+    margin-bottom: 1.2rem; /* Khoảng cách */
+}
+
+h1, h2 {
+    color: #333; /* Màu chữ */
+    margin-bottom: 1.5rem; /* Khoảng cách dưới */
+}
+
+.hidden {
+    display: none; /* Ẩn phần tử */
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Khoảng cách giữa các nút */
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Khoảng cách giữa các nút */
+    margin-bottom: 1.5rem; /* Khoảng cách dưới */
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center; /* Canh giữa chữ */
+}
+
+/* Style all input fields */
+input {
+    width: 100%;
+    padding: 12px; /* Đệm */
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 4px; /* Góc bo tròn */
+    box-sizing: border-box;
+    margin-top: 6px; /* Khoảng cách trên */
+    margin-bottom: 16px; /* Khoảng cách dưới */
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D; /* Nền nút gửi */
+    color: white; /* Màu chữ */
+}

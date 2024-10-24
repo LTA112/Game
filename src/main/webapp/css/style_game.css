@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Nhập font chữ 'Press Start 2P' từ Google Fonts */
+
+* {
+    margin: 0; /* Xóa margin mặc định */
+    padding: 0; /* Xóa padding mặc định */
+    box-sizing: border-box; /* Bao gồm padding và border trong chiều rộng và chiều cao */
+    font-family: 'Press Start 2P', cursive; /* Áp dụng font chữ 'Press Start 2P' */
+}
+
+body {
+    font-size: 14px; /* Đặt kích thước chữ chung cho body */
+}
+
+.background {
+    height: 100vh; /* Chiều cao toàn màn hình */
+    width: 100vw; /* Chiều rộng toàn màn hình */
+    background: url('../images/background-img.png') no-repeat center center fixed; /* Đặt hình nền */
+    background-size: cover; /* Hình nền bao phủ toàn bộ màn hình */
+    overflow: hidden; /* Ẩn phần tràn ra ngoài */
+}
+
+.bird {
+    height: 100px; /* Chiều cao của bird */
+    width: 130px; /* Chiều rộng của bird */
+    position: fixed; /* Vị trí cố định */
+    top: 40vh; /* Cách đỉnh 40% chiều cao viewport */
+    left: 30vw; /* Cách trái 30% chiều rộng viewport */
+    z-index: 100; /* Đảm bảo bird nằm trên các phần tử khác */
+}
+
+.pipe_sprite {
+    position: fixed; /* Vị trí cố định */
+    top: 40vh; /* Cách đỉnh 40% chiều cao viewport */
+    left: 100vw; /* Cách trái 100% chiều rộng viewport */
+    height: 70vh; /* Chiều cao 70% chiều cao viewport */
+    width: 6vw; /* Chiều rộng 6% chiều rộng viewport */
+    background: radial-gradient(yellow 50%, #CD7F32); /* Gradient nền màu xanh biển */
+    border: 5px solid black; /* Viền đen dày 5px */
+}
+
+.message {
+    position: absolute; /* Vị trí tuyệt đối */
+    z-index: 10; /* Đảm bảo message nằm trên các phần tử khác */
+    color: black; /* Màu chữ đen */
+    top: 30%; /* Cách đỉnh 30% */
+    left: 50%; /* Cách trái 50% */
+    font-size: 2em; /* Kích thước chữ 2em */
+    transform: translate(-50%, -50%); /* Dịch chuyển để canh giữa */
+    text-align: center; /* Canh giữa nội dung */
+}
+
+.messageStyle {
+    background: white; /* Nền trắng */
+    padding: 30px; /* Khoảng cách bên trong 30px */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Bóng đổ nhẹ */
+    border-radius: 5%; /* Bo tròn góc */
+}
+
+.score {
+    position: fixed; /* Vị trí cố định */
+    z-index: 10; /* Đảm bảo score nằm trên các phần tử khác */
+    height: 10vh; /* Chiều cao 10% chiều cao viewport */
+    font-size: 4vh; /* Kích thước chữ 4% chiều cao viewport */
+    font-weight: 100; /* Chữ mảnh */
+    color: white; /* Màu chữ trắng */
+    -webkit-text-stroke-width: 2px; /* Viền chữ dày 2px */
+    -webkit-text-stroke-color: black; /* Màu viền đen */
+    top: 0; /* Cách đỉnh 0 */
+    right: 50px; /* Cách trái 50% chiều rộng viewport */
+    margin: 10px; /* Khoảng cách ngoài 10px */
+    text-align: right; /* Canh giữa nội dung */
+}
+
+.score_title {
+    display: block; /* Hiển thị như khối để xuống dòng */
+    padding-bottom: 10px;
+}
+
+.score_val {
+    color: gold; /* Màu chữ vàng */
+    font-weight: bold; /* Chữ đậm */
+}
+
+@media only screen and (max-width: 1080px) { /* Điều chỉnh cho màn hình nhỏ hơn 1080px */
+    .message {
+        font-size: 1.5em; /* Kích thước chữ nhỏ hơn */
+        top: 50%; /* Cách đỉnh 50% */
+        white-space: nowrap; /* Không xuống dòng */
+    }
+    .score {
+        font-size: 3vh; /* Kích thước chữ nhỏ hơn */
+    }
+    .bird {
+        width: 120px; /* Chiều rộng nhỏ hơn */
+        height: 90px; /* Chiều cao nhỏ hơn */
+    }
+    .pipe_sprite {
+        width: 14vw; /* Chiều rộng lớn hơn */
+    }
+}
+
+/* Đặt kiểu cho nút "Back" */
+.back-button {
+    font-size: 16px; /* Kích thước chữ */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    position: absolute; /* Vị trí tuyệt đối */
+    top: 10px; /* Cách đỉnh 10px */
+    left: 10px; /* Cách trái 10px */
+    z-index: 1000; /* Đảm bảo nút luôn trên các phần tử khác */
+}
+
+/* Đặt hiệu ứng khi hover chuột vào nút "Back" */
+.back-button:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+}
+
+/* Định kiểu cho lớp foreground */
+.foreground {
+    position: fixed; /* Vị trí cố định */
+    width: 100vw; /* Chiều rộng toàn màn hình */
+    height: 100vh; /* Chiều cao toàn màn hình */
+    background-color: rgba(135, 206, 250, 0.25); /* Màu xanh da trời với opacity 25% */
+    top: 0; /* Đặt ở đỉnh màn hình */
+    left: 0; /* Đặt ở bên trái màn hình */
+    z-index: 110; /* Đảm bảo lớp foreground nằm trên tất cả các phần tử khác */
+}
+
+body {
+    min-width: 1024px; /* Kích thước tối thiểu để đảm bảo nội dung hiển thị đúng */
+    min-height: 768px; /* Chiều cao tối thiểu để đảm bảo nội dung hiển thị đúng */
+    max-width: 1024px; /* Kích thước tối đa để đảm bảo nội dung hiển thị đúng */
+    max-height: 768px; /* Chiều cao tối đa để đảm bảo nội dung hiển thị đúng */
+}

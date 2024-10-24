@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: url('../images/mb.gif') no-repeat center center fixed; /* Nền ảnh cố định */
+    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ màn hình */
+    color: #333; /* Màu chữ */
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive; /* Sử dụng font chữ Pixel */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Nền mờ */
+    border-radius: 15px; /* Góc bo tròn */
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    max-width: 500px;
+    margin: 5rem auto; /* Canh giữa và thêm khoảng cách */
+    text-align: center; /* Canh giữa văn bản */
+}
+
+.alert-danger {
+    color: red; /* Màu chữ cảnh báo */
+}
+
+a {
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+}
+
+.custom-btn {
+    font-size: 1rem; /* Kích thước chữ */
+    padding: 0.8rem 1.6rem; /* Đệm */
+    border-radius: 10px; /* Góc bo tròn */
+    text-transform: uppercase; /* Chữ hoa */
+    font-weight: bold; /* Đậm chữ */
+    display: inline-flex; /* Chuyển sang flex để canh giữa nội dung */
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    margin: 0.1rem;
+    transition: background 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi màu nền và chữ */
+    text-align: center; /* Canh giữa văn bản */
+}
+
+.btn-play {
+    background: #FFCC00; /* Nền nút */
+    color: #333; /* Màu chữ */
+    border: none;
+}
+
+.btn-play:hover {
+    background: #FFD700; /* Nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+}
+
+.btn-login {
+    background: #32CD32; /* Nền nút đăng nhập */
+    color: #fff;
+    border: none;
+}
+
+.btn-login:hover {
+    background: #228B22; /* Nền khi hover */
+}
+
+.btn-register {
+    background: #1E90FF; /* Nền nút đăng ký */
+    color: #fff;
+    border: none;
+}
+
+.btn-register:hover {
+    background: #4682B4; /* Nền khi hover */
+}
+
+.btn-rank {
+    background: #000; /* Nền nút */
+    border: none;
+    padding: 0;
+    width: 100px; /* Chiều rộng */
+    height: 66px; /* Chiều cao */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Con trỏ chuột */
+    text-align: center; /* Canh giữa văn bản */
+}
+
+.btn-rank img {
+    width: 30px; /* Kích thước ảnh */
+    height: 30px; /* Giữ tỉ lệ kích thước ảnh */
+}
+
+.btn-rank:hover {
+    background: #333; /* Nền khi hover */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* Nền mờ */
+    padding: 1.5rem;
+    border-radius: 10px; /* Góc bo tròn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    margin: 1rem auto;
+    max-width: 400px;
+}
+
+.form-control {
+    border-radius: 5px; /* Góc bo tròn */
+    border: 1px solid #ddd; /* Viền */
+}
+
+.custom-spacing {
+    margin-bottom: 1.2rem; /* Khoảng cách dưới */
+}
+
+h1, h2 {
+    color: #333; /* Màu chữ */
+    margin-bottom: 1.5rem; /* Khoảng cách dưới */
+    font-size: 2rem; /* Kích thước chữ */
+    line-height: 1.5; /* Khoảng cách giữa các dòng chữ */
+}
+
+.hidden {
+    display: none; /* Ẩn phần tử */
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; /* Canh giữa các nút */
+    gap: 1rem; /* Khoảng cách giữa các nút */
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center; /* Canh giữa các nút */
+    gap: 1rem; /* Khoảng cách giữa các nút */
+    margin-bottom: 1.5rem; /* Khoảng cách dưới */
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center; /* Canh giữa */
+}
+
+.text-center {
+    text-align: center; /* Canh giữa văn bản */
+}
+
+/* Style all input fields */
+input {
+    width: 100%; /* Chiều rộng 100% */
+    padding: 12px; /* Đệm */
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 4px; /* Góc bo tròn */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+    margin-top: 6px; /* Khoảng cách trên */
+    margin-bottom: 16px; /* Khoảng cách dưới */
+    font-size: 0.9rem; /* Kích thước chữ */
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D; /* Nền nút gửi */
+    color: white; /* Màu chữ */
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background-img.png');
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Điều chỉnh để nội dung được căn giữa */
+    font-family: 'Press Start 2P', cursive; /* Sử dụng font chữ Pixel */
+}
+
+.leaderboard {
+    width: 60%; /* Điều chỉnh lại độ rộng để cân đối hơn */
+    max-width: 800px; /* Đặt giới hạn độ rộng tối đa để tránh quá rộng trên màn hình lớn */
+    background: rgba(255, 255, 255, 0.9); /* Thêm nền trắng trong suốt để dễ đọc */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ để tạo độ nổi */
+}
+
+h1 {
+    line-height: 1.5; /* Khoảng cách giữa các dòng chữ */
+    margin-bottom: 65px; /* Điều chỉnh khoảng cách dưới tiêu đề */
+    text-align: center;
+}
+
+.back-button {
+    font-size: 20px; /* Tăng kích thước phông chữ */
+    padding: 15px 30px; /* Tăng kích thước padding */
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 20px; /* Đặt vị trí cách đỉnh 20px */
+    left: 20px; /* Đặt vị trí cách bên trái 20px */
+    z-index: 1000; /* Đảm bảo nút luôn ở trên các phần tử khác */
+}
+
+/* Đặt hiệu ứng khi hover chuột vào nút "Back" */
+.back-button:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+}
+
+.leaderboard-item {
+    background-color: #9575cd;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ để tạo độ nổi */
+}
+
+.top3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Căn chỉnh các phần tử con xuống dưới */
+    margin-bottom: 40px; /* Tăng khoảng cách dưới để đẹp hơn */
+    width: 100%;
+    position: relative;
+}
+
+.top3 .first {
+    order: 2;
+    background-color: #FFD700; /* Màu vàng cho người đứng đầu */
+    padding: 20px;
+    border-radius: 50%;
+    width: 120px; /* Tăng kích thước để nổi bật hơn */
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -60px; /* Điều chỉnh vị trí */
+    font-size: 1.5em;
+}
+
+.top3 .second {
+    background-color: #C0C0C0; /* Màu bạc cho người thứ hai */
+    padding: 15px; /* Điều chỉnh padding */
+    border-radius: 50%;
+    width: 100px; /* Tăng kích thước */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20%; /* Điều chỉnh khoảng cách */
+}
+
+.top3 .third {
+    background-color: #CD7F32; /* Màu đồng cho người thứ ba */
+    padding: 15px; /* Điều chỉnh padding */
+    border-radius: 50%;
+    width: 100px; /* Tăng kích thước */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%; /* Điều chỉnh khoảng cách */
+}
+
+.top3 div span {
+    display: block;
+}
+
+.overflow {
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
